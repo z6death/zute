@@ -65,3 +65,4 @@ c.colors.contextmenu.menu.bg = '#000000'
 c.colors.contextmenu.menu.fg = '#00FF4C'
 c.colors.contextmenu.selected.bg = '#00C400'
 c.colors.contextmenu.selected.fg = '#000000'
+c.content.user_stylesheets = ['~/.config/qutebrowser/green-black.css']
