@@ -1,185 +1,26 @@
-/* ==UserStyle==
-@name         Universal Lighter Green/Black Theme
-@namespace    github.com/your-username
-@version      1.4
-@description  Applies #00FF4C-based palette to ALL websites
-@author       You
-@license      MIT
-==/UserStyle== */
-
-/* ===== CORE PALETTE ===== */
+/* Minimal Green/Black - Text Only */
 :root {
-  --green-primary: #00FF4C;       /* Your lighter green (text/links) */
-  --green-secondary: #00CC3D;     /* Slightly darker (headers) */
-  --green-accent: #00992E;        /* Borders/buttons */
-  --green-dark: #006622;          /* Dark accents */
-  --black: #000000;               /* Background */
-  --white: #FFFFFF;               /* Rare highlights */
+  --green: #00FF4C;
+  --black: #000000;
 }
 
-/* ===== GLOBAL ELEMENTS ===== */
-/* Force black backgrounds everywhere */
-html, body, div, section, article, header, footer, 
-main, aside, nav, form, table, tr, td, th, ul, ol, li, 
-p, span, pre, code, blockquote {
-  background: var(--black) !important;
-  color: var(--green-primary) !important;
+/* Text Elements */
+body, p, h1, h2, h3, h4, h5, h6, 
+span, div, a, li, td, th, pre, code {
+  color: var(--green) !important;
+  background-color: var(--black) !important;
 }
 
-/* Headers (secondary green) */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--green-secondary) !important;
-}
-
-/* Links & interactive elements */
-a, a:hover, a:visited, 
-button, input[type="button"], 
-input[type="submit"], [role="button"] {
-  color: var(--green-primary) !important;
-  background: transparent !important;
-  border-color: var(--green-accent) !important;
+/* Links */
+a, a:visited, a:hover {
+  color: var(--green) !important;
   text-decoration: underline !important;
 }
 
-/* Input fields */
-input, textarea, select {
-  background: var(--black) !important;
-  color: var(--green-primary) !important;
-  border: 1px solid var(--green-accent) !important;
-}
-
-/* Images: Slightly desaturated but visible */
-img, svg, video {
-  filter: 
-    brightness(0.8) 
-    saturate(0.7) 
-    hue-rotate(5deg) !important;
-}
-
-/* ===== OVERRIDE INLINE STYLES ===== */
-*[style*="background-color"],
-*[style*="background"] {
-  background: var(--black) !important;
-}
-
-*[style*="color"] {
-  color: var(--green-primary) !important;
-}
-
-/* ===== SITE-SPECIFIC FIXES ===== */
-/* GitHub */
-@-moz-document domain("github.com") {
-  .pl-k, .pl-c { color: var(--green-secondary) !important; } /* Syntax */
-  .btn-primary {
-    background: var(--green-dark) !important;
-    color: var(--black) !important;
-  }
-}
-
-/* YouTube */
-/* ===== YOUTUBE FIXES ===== */
-@-moz-document domain("youtube.com") {
-  /* Video thumbnails (both long and Shorts) */
-  ytd-thumbnail, #thumbnail, 
-  yt-img-shadow, yt-image,
-  .yt-core-image {
-    filter: brightness(0.9) saturate(1.1) !important;
-    opacity: 1 !important;
-  }
-
-  /* Video player container */
-  .html5-video-player {
-    background: var(--black) !important;
-  }
-
-  /* Shorts player */
-  ytd-reel-video-renderer {
-    background: var(--black) !important;
-  }
-
-  /* Video element (critical fix) */
-  video {
-    filter: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-
-  /* Progress bars */
-  .ytp-play-progress {
-    background: var(--green-primary) !important;
-  }
-}
-
-/* ===== SAFE MEDIA RULES ===== */
-/* Never modify these elements globally */
-video, iframe {
+/* Protected Elements */
+img, video, iframe, svg, canvas,
+input, textarea, button, select {
   filter: none !important;
-}
-
-/* Images (non-YouTube) */
-img:not([src*="ytimg.com"]) {
-  filter: brightness(0.8) saturate(0.7) !important;
-}
-
-/* Reddit */
-@-moz-document domain("reddit.com") {
-  .upvote {
-    color: var(--green-primary) !important;
-  }
-  .Post {
-    background: var(--black) !important;
-    border-color: var(--green-dark) !important;
-  }
-}
-@-moz-document domain("roadmap.sh") {
-  /* ===== BASE STYLES ===== */
-  body {
-    background: #000 !important;
-    color: #00FF4C !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-
-  /* ===== SAFE ELEMENT SELECTION ===== */
-  /* Text elements */
-  p, span, div, li, td, pre, code {
-    color: #00FF4C !important;
-    background: transparent !important;
-  }
-
-  /* Headers */
-  h1, h2, h3, h4, h5, h6 {
-    color: #00CC3D !important;
-  }
-
-  /* Links */
-  a {
-    color: #00FF4C !important;
-    text-decoration: underline !important;
-  }
-
-  /* ===== ROADMAP.SH SPECIFIC FIXES ===== */
-  /* Main content container */
-  .container {
-    background: #000 !important;
-  }
-
-  /* Roadmap items */
-  .item {
-    background: #111 !important;
-    border-color: #00992E !important;
-  }
-
-  /* Loading safeguard */
-  #app:empty::before {
-    content: "Loading roadmap..." !important;
-    color: #00FF4C !important;
-    display: block !important;
-    padding: 20px !important;
-  }
-
-  /* Never modify these elements */
-  svg, img, canvas {
-    filter: none !important;
-  }
+  background-color: unset !important;
+  color: unset !important;
 }
