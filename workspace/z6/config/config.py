@@ -1,8 +1,10 @@
+
 # ===== BASIC CONFIGURATION =====
 config.load_autoconfig(False)
 
 # ===== CORE COLOR SETTINGS =====
 # Text colors (All green #00FF4C)
+c.content.user_stylesheets = ['~/.config/qutebrowser/green-black.css']
 c.colors.completion.fg = '#00FF4C'
 c.colors.completion.category.fg = '#00FF4C'
 c.colors.statusbar.normal.fg = '#00FF4C'
@@ -60,7 +62,6 @@ c.fonts.statusbar = '11pt monospace'
 c.fonts.hints = 'bold 11pt monospace'
 
 # ===== WEB CONTENT SETTINGS =====
-c.content.user_stylesheets = ['~/.config/qutebrowser/green-black.css']
 c.colors.webpage.preferred_color_scheme = 'dark'
 c.colors.webpage.bg = 'black'
 

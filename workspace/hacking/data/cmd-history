@@ -1,2 +1,25 @@
 :open ~/.config/qutebrowser/home/index.html
 :config-source
+:open hacker101
+:open great learning
+:open cisco networking
+:open tryhackme
+:open cs50 cyersecurity
+:open how to start hacking
+:open gmail
+:open protonmail
+:open cybrary
+:open hackerone
+:open hackerday
+:config-source
+:open geeksforgeeks
+:config-source
+:open deepseek
+:open hackerone
+:open hackday
+:open https://olympus.mygreatlearning.com/courses/12629?pb_id=581
+:config-source
+:open https://app.cybrary.it/
+:config-source
+:open https://www.geeksforgeeks.org/ethical-hacking/ethical-hacking-tutorial/
+:config-source

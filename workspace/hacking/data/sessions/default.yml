@@ -1,17 +1,144 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAAKAAACIQAAB3UAAAQZAAAAEwAAAioAAAdsAAAEEAAAAAAAAAAAB4AAAAATAAAC
-    KgAAB2wAAAQQ
+    AdnQywADAAAAAAPFAAAAHgAAB3UAAAQZAAADzgAAACcAAAdsAAAEEAAAAAAAAAAAB4AAAAPOAAAA
+    JwAAB2wAAAQQ
   tabs:
   - active: true
     history:
+    - last_visited: '2025-08-15T15:31:56'
+      pinned: false
+      title: Learn Cyber Security | TryHackMe Cyber Training
+      url: https://tryhackme.com/
+    - last_visited: '2025-08-15T15:33:52'
+      pinned: false
+      title: TryHackMe | Login
+      url: https://tryhackme.com/login
     - active: true
-      last_visited: '2025-08-15T12:43:44'
+      last_visited: '2025-08-15T15:38:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
+      title: TryHackMe | Dashboard
+      url: https://tryhackme.com/dashboard
+      zoom: 1.0
+  - history:
+    - last_visited: '2025-08-15T15:31:44'
+      pinned: false
+      title: Home | Hacker101
+      url: https://www.hacker101.com/
+    - active: true
+      last_visited: '2025-08-15T15:50:56'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Getting Started | Hacker101
+      url: https://www.hacker101.com/start-here
+      zoom: 1.0
+  - history:
+    - last_visited: '2025-08-15T15:31:45'
+      pinned: false
+      title: 'Cisco Networking Academy: Learn Cybersecurity, Python & More'
+      url: https://www.netacad.com/
+    - last_visited: '2025-08-15T15:39:00'
+      original-url: https://auth.netacad.com/auth/realms/skillsforall/protocol/openid-connect/auth?client_id=b2e-marketplace&redirect_uri=https%3A%2F%2Fwww.netacad.com%2Fdashboard&state=c655670c-8f15-4df3-949c-5f8dfb61c8a4&response_mode=fragment&response_type=code&scope=openid&nonce=22e25c67-18c9-463d-934b-aee7ac74aaed&ui_locales=en-US&code_challenge=8tEoGsihLS0tPMTWNpiJosFxD6epC5pTvZjEqdoSsfo&code_challenge_method=S256
+      pinned: false
+      title: Login | Networking Academy with Cisco
+      url: https://auth.netacad.com/auth/realms/skillsforall/login-actions/authenticate?client_id=b2e-marketplace&tab_id=6N9eUlFr_Lo&client_data=eyJydSI6Imh0dHBzOi8vd3d3Lm5ldGFjYWQuY29tL2Rhc2hib2FyZCIsInJ0IjoiY29kZSIsInJtIjoiZnJhZ21lbnQiLCJzdCI6ImM2NTU2NzBjLThmMTUtNGRmMy05NDljLTVmOGRmYjYxYzhhNCJ9&execution=544c98b5-6b03-41d5-b104-b625ecff8ce5&kc_locale=en
+    - active: true
+      last_visited: '2025-08-15T15:39:15'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'Cisco Networking Academy: My Learning Dashboard'
+      url: https://www.netacad.com/dashboard
+      zoom: 1.0
+  - history:
+    - last_visited: '2025-08-15T15:44:08'
+      pinned: false
       title: Homepage
       url: file:///home/z6/.config/qutebrowser/home/index.html
+    - last_visited: '2025-08-15T15:46:02'
+      pinned: false
+      title: hackerone at DuckDuckGo
+      url: https://duckduckgo.com/?q=hackerone&ia=web
+    - last_visited: '2025-08-15T15:46:24'
+      pinned: false
+      title: HackerOne | Global leader in offensive security | Security for AI | Crowdsourced
+        Security
+      url: https://www.hackerone.com/
+    - last_visited: '2025-08-15T15:46:45'
+      pinned: false
+      title: Just a moment...
+      url: https://hackerone.com/users/sign_in?__cf_chl_tk=RxyOmeC1AQPzhMy2fEaMj0Zye50Fb14th1Iiweez0XI-1755251188-1.0.1.1-nvxBzjL5yQh5V_2bM8EH077dSLq6iQOP19A0yYh4BRI
+    - last_visited: '2025-08-15T15:46:46'
+      pinned: false
+      title: Two-factor authentication | HackerOne
+      url: https://hackerone.com/users/sign_in
+    - last_visited: '2025-08-15T15:48:35'
+      original-url: https://hackerone.com/users/sign_in
+      pinned: false
+      title: HackerOne
+      url: https://hackerone.com/my_preferences
+    - last_visited: '2025-08-15T15:58:54'
+      pinned: false
+      title: Opportunity Discovery Overview | HackerOne
+      url: https://hackerone.com/opportunities/all
+    - active: true
+      last_visited: '2025-08-15T16:05:51'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Opportunity Discovery Overview | HackerOne
+      url: https://hackerone.com/opportunities/all
+      zoom: 1.0
+  - history:
+    - last_visited: '2025-08-15T16:07:07'
+      pinned: false
+      title: Homepage
+      url: file:///home/z6/.config/qutebrowser/home/index.html
+    - active: true
+      last_visited: '2025-08-15T16:08:30'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Ethical Hacking Tutorial - GeeksforGeeks
+      url: https://www.geeksforgeeks.org/ethical-hacking/ethical-hacking-tutorial/
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2025-08-15T15:31:52'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: How to Become an Ethical Hacker in 2025? - GeeksforGeeks
+      url: https://www.geeksforgeeks.org/blogs/how-to-become-ethical-hacker/
+      zoom: 1.0
+  - history:
+    - last_visited: '2025-08-15T15:32:08'
+      pinned: false
+      title: geeksforgeeks at DuckDuckGo
+      url: https://duckduckgo.com/?q=geeksforgeeks&ia=web
+    - last_visited: '2025-08-15T15:32:15'
+      pinned: false
+      title: GeeksforGeeks | Your All-in-One Learning Portal
+      url: https://www.geeksforgeeks.org/
+    - last_visited: '2025-08-15T15:32:37'
+      pinned: false
+      title: You searched for Introduction to Ethical Hacking - GeeksforGeeks
+      url: https://www.geeksforgeeks.org/search/?gq=Introduction%20to%20Ethical%20Hacking
+    - active: true
+      last_visited: '2025-08-15T15:32:38'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: You searched for Introduction to Ethical Hacking - GeeksforGeeks
+      url: https://www.geeksforgeeks.org/search/?gq=Introduction+to+Ethical+Hacking
       zoom: 1.0

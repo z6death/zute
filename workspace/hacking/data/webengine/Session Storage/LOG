@@ -1,3 +1,6 @@
-2025/08/15-12:43:45.583 2061 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/Session Storage/MANIFEST-000001
-2025/08/15-12:43:45.583 2061 Recovering log #3
-2025/08/15-12:43:45.584 2061 Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/Session Storage/000003.log 
+2025/08/15-15:31:44.660 3c71 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/Session Storage/MANIFEST-000001
+2025/08/15-15:31:44.666 3c71 Recovering log #4
+2025/08/15-15:31:44.669 3c71 Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/Session Storage/000004.log 
+2025/08/15-16:08:36.948 4896 Level-0 table #8: started
+2025/08/15-16:08:36.953 4896 Level-0 table #8: 17761 bytes OK
+2025/08/15-16:08:36.961 4896 Delete type=0 #4

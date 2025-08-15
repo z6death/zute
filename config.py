@@ -3,25 +3,6 @@ config.load_autoconfig(False)
 
 # ===== CORE COLOR SETTINGS =====
 # Text colors (All green #00FF4C)
-c.colors.completion.fg = '#00FF4C'
-c.colors.completion.category.fg = '#00FF4C'
-c.colors.statusbar.normal.fg = '#00FF4C'
-c.colors.statusbar.insert.fg = '#00FF4C'
-c.colors.statusbar.command.fg = '#00FF4C'
-c.colors.statusbar.url.fg = '#00FF4C'
-c.colors.hints.fg = '#00FF4C'
-c.colors.contextmenu.menu.fg = '#00FF4C'
-
-# Background colors (All black #000000)
-c.colors.completion.category.bg = '#000000'
-c.colors.completion.odd.bg = '#000000'
-c.colors.completion.even.bg = '#000000'
-c.colors.statusbar.normal.bg = '#000000'
-c.colors.statusbar.insert.bg = '#000000'
-c.colors.statusbar.command.bg = '#000000'
-c.colors.tabs.bar.bg = '#000000'
-c.colors.hints.bg = '#000000'
-c.colors.contextmenu.menu.bg = '#000000'
 
 # ===== TAB COLORS =====
 # Selected tab (green background, black text)
@@ -60,7 +41,6 @@ c.fonts.statusbar = '11pt monospace'
 c.fonts.hints = 'bold 11pt monospace'
 
 # ===== WEB CONTENT SETTINGS =====
-c.content.user_stylesheets = ['~/.config/qutebrowser/green-black.css']
 c.colors.webpage.preferred_color_scheme = 'dark'
 c.colors.webpage.bg = 'black'
 
