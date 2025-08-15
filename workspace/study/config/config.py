@@ -145,5 +145,5 @@ config.content.blocking.whitelist = []  # No exceptions
 
 # === OPTIONAL TWEAKS ===
 # Uncomment if you want stricter blocking (may break some sites):
-config.content.blocking.method = 'both'  
-config.content.canvas_reading = False  
+#config.content.blocking.method = 'both'  
+#config.content.canvas_reading = False  
