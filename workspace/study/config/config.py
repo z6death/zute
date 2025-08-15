@@ -3,6 +3,18 @@ config.load_autoconfig(False)
 
 # ===== CORE COLOR SETTINGS =====
 # Text colors (All green #00FF4C)
+
+# Initialize with stylesheet disabled
+config.load_autoconfig()
+config.set('content.user_stylesheets', [])
+
+# Corrected single toggle key
+config.bind(',st', 
+    'config-cycle content.user_stylesheets [] ["~/.config/qutebrowser/green-black.css"] ;; ' +
+    'jseval -q py:message.info("Green/Black theme " + ' +
+    '("ENABLED" if config.val.content.user_stylesheets else "DISABLED"))',
+    mode='normal')
+
 c.colors.completion.fg = '#00FF4C'
 c.colors.completion.category.fg = '#00FF4C'
 c.colors.statusbar.normal.fg = '#00FF4C'
@@ -60,7 +72,6 @@ c.fonts.statusbar = '11pt monospace'
 c.fonts.hints = 'bold 11pt monospace'
 
 # ===== WEB CONTENT SETTINGS =====
-c.content.user_stylesheets = ['~/.config/qutebrowser/green-black.css']
 c.colors.webpage.preferred_color_scheme = 'dark'
 c.colors.webpage.bg = 'black'
 
