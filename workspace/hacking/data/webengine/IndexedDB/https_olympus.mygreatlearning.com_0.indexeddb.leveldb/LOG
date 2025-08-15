@@ -1,7 +1,13 @@
-2025/08/15-15:50:43.664 4499 Creating DB /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_olympus.mygreatlearning.com_0.indexeddb.leveldb since it was missing.
-2025/08/15-15:50:43.669 4499 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_olympus.mygreatlearning.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/08/15-15:50:45.269 3c6a Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/08/15-15:59:12.440 4680 Level-0 table #5: started
-2025/08/15-15:59:12.450 4680 Level-0 table #5: 41668 bytes OK
-2025/08/15-15:59:12.453 4680 Delete type=0 #3
-2025/08/15-15:59:12.454 4680 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/08/15-18:24:33.596 7c0 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_olympus.mygreatlearning.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/08/15-18:24:33.596 7c0 Recovering log #7
+2025/08/15-18:24:33.599 7c0 Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_olympus.mygreatlearning.com_0.indexeddb.leveldb/000007.log 
+2025/08/15-18:24:40.602 7bf Level-0 table #11: started
+2025/08/15-18:24:40.622 7bf Level-0 table #11: 6863 bytes OK
+2025/08/15-18:24:40.630 7bf Delete type=0 #7
+2025/08/15-18:24:40.634 7bf Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 1190 : 1
+2025/08/15-18:24:40.634 7bf Compacting 1@0 + 1@1 files
+2025/08/15-18:24:40.639 7bf Generated table #12@0: 76 keys, 2269 bytes
+2025/08/15-18:24:40.639 7bf Compacted 1@0 + 1@1 files => 2269 bytes
+2025/08/15-18:24:40.656 7bf compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/08/15-18:24:40.656 7bf Delete type=2 #11
+2025/08/15-18:24:40.657 7bf Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 1190 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)

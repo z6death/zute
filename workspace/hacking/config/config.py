@@ -6,8 +6,7 @@ config.load_autoconfig(False)
 
 # Initialize with stylesheet disabled
 config.load_autoconfig()
-config.set('content.user_stylesheets', [])
-
+config.set('content.user_stylesheets', ['~/.config/qutebrowser/green-black.css'])
 # Corrected single toggle key
 config.bind(',st', 
     'config-cycle content.user_stylesheets [] ["~/.config/qutebrowser/green-black.css"] ;; ' +
@@ -34,6 +33,7 @@ c.colors.statusbar.command.bg = '#000000'
 c.colors.tabs.bar.bg = '#000000'
 c.colors.hints.bg = '#000000'
 c.colors.contextmenu.menu.bg = '#000000'
+
 # ===== TAB COLORS =====
 # Selected tab (green background, black text)
 c.colors.tabs.selected.odd.fg = '#000000'

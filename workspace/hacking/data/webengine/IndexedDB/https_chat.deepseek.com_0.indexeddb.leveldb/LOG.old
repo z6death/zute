@@ -1,3 +1,7 @@
-2025/08/15-15:41:06.982 4089 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_chat.deepseek.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/08/15-15:41:06.982 4089 Recovering log #3
-2025/08/15-15:41:06.983 4089 Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_chat.deepseek.com_0.indexeddb.leveldb/000003.log 
+2025/08/15-17:55:35.412 652f Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_chat.deepseek.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/08/15-17:55:35.413 652f Recovering log #3
+2025/08/15-17:55:35.416 652f Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_chat.deepseek.com_0.indexeddb.leveldb/000003.log 
+2025/08/15-18:17:03.274 6cb5 Level-0 table #5: started
+2025/08/15-18:17:03.276 6cb5 Level-0 table #5: 2322 bytes OK
+2025/08/15-18:17:03.279 6cb5 Delete type=0 #3
+2025/08/15-18:17:03.279 6cb5 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
