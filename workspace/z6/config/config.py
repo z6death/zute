@@ -2,7 +2,6 @@
 config.load_autoconfig(False)
 
 # ===== CORE COLOR SETTINGS =====
-# Text colors (All green #00FF4C)
 
 # Initialize with stylesheet disabled
 config.load_autoconfig()
@@ -14,6 +13,7 @@ config.bind(',st',
     '("ENABLED" if config.val.content.user_stylesheets else "DISABLED"))',
     mode='normal')
 
+# Text colors (All green #00FF4C)
 c.colors.completion.fg = '#00FF4C'
 c.colors.completion.category.fg = '#00FF4C'
 c.colors.statusbar.normal.fg = '#00FF4C'
@@ -109,3 +109,41 @@ config.bind(',sd', 'session-delete')
 config.bind(',wd1', 'spawn --userscript switch-workspace hacking')
 config.bind(',wd2', 'spawn --userscript switch-workspace study')
 config.bind(',wd3', 'spawn --userscript switch-workspace z6')
+
+# ===== MAIN AD-BLOCKING SETUP =====
+config.content.blocking.method = 'auto'  # Best balance (hosts + adblock)
+config.content.blocking.enabled = True
+
+# === ADBLOCK LISTS (EasyList-style rules) ===
+config.content.blocking.adblock.lists = [
+    # Base filters (essential)
+    'https://easylist.to/easylist/easylist.txt',
+    'https://easylist.to/easylist/easyprivacy.txt',
+    
+    # Anti-annoyance (cookie popups, etc.)
+    'https://secure.fanboy.co.nz/fanboy-annoyance.txt',
+    
+    # Extra ad/tracker blocking
+    'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=0',
+    
+    # Social media trackers (optional)
+    'https://secure.fanboy.co.nz/fanboy-antifacebook.txt',
+]
+
+# === HOSTS-BASED BLOCKING (faster, but less flexible) ===
+config.content.blocking.hosts.lists = [
+    # Blocks ads + malware
+    'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',
+    
+    # Optional: Aggressive blocking (may break some sites)
+    # 'https://someonewhocares.org/hosts/zero/hosts',
+]
+
+# === PERFORMANCE SETTINGS ===
+config.content.blocking.update_interval = 86400  # Update lists every 24h
+config.content.blocking.whitelist = []  # No exceptions
+
+# === OPTIONAL TWEAKS ===
+# Uncomment if you want stricter blocking (may break some sites):
+config.content.blocking.method = 'both'  
+config.content.canvas_reading = False  
