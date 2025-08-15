@@ -1,21 +1,3 @@
-2025/08/15-18:24:21.494 6fd Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/Local Storage/leveldb/MANIFEST-000001
-2025/08/15-18:24:21.503 6fd Recovering log #67
-2025/08/15-18:24:21.504 6fd Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/Local Storage/leveldb/000067.log 
-2025/08/15-18:25:24.542 701 Level-0 table #71: started
-2025/08/15-18:25:24.551 701 Level-0 table #71: 29162 bytes OK
-2025/08/15-18:25:24.557 701 Delete type=0 #67
-2025/08/15-18:25:24.560 701 Compacting 4@0 + 1@1 files
-2025/08/15-18:25:24.565 701 Generated table #72@0: 479 keys, 83456 bytes
-2025/08/15-18:25:24.565 701 Compacted 4@0 + 1@1 files => 83456 bytes
-2025/08/15-18:25:24.569 701 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/08/15-18:25:24.569 701 Delete type=2 #62
-2025/08/15-18:25:24.569 701 Delete type=2 #64
-2025/08/15-18:25:24.569 701 Delete type=2 #66
-2025/08/15-18:25:24.569 701 Delete type=2 #68
-2025/08/15-18:25:24.570 701 Delete type=2 #71
-2025/08/15-18:29:11.935 93a Level-0 table #74: started
-2025/08/15-18:29:11.937 93a Level-0 table #74: 27737 bytes OK
-2025/08/15-18:29:11.941 93a Delete type=0 #70
-2025/08/15-18:33:23.315 93a Level-0 table #76: started
-2025/08/15-18:33:23.325 93a Level-0 table #76: 21744 bytes OK
-2025/08/15-18:33:23.330 93a Delete type=0 #73
+2025/08/15-23:23:58.901 35d2 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/Local Storage/leveldb/MANIFEST-000001
+2025/08/15-23:23:58.901 35d2 Recovering log #75
+2025/08/15-23:23:58.901 35d2 Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/Local Storage/leveldb/000075.log 

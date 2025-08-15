@@ -1,12 +1,12 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAPFAAAAHgAAB3UAAAQZAAADzgAAACcAAAdsAAAEEAAAAAAAAAAAB4AAAAPOAAAA
+    AdnQywADAAAAAAAKAAAAHgAAB3UAAAQZAAAAEwAAACcAAAdsAAAEEAAAAAAAAAAAB4AAAAATAAAA
     JwAAB2wAAAQQ
   tabs:
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:39'
+      last_visited: '2025-08-15T23:24:00'
       pinned: false
       scroll-pos:
         x: 0
@@ -15,25 +15,8 @@ windows:
       url: https://tryhackme.com/room/offensivesecurityintro
       zoom: 1.0
   - history:
-    - last_visited: '2025-08-15T18:24:22'
-      pinned: false
-      title: Homepage
-      url: file:///home/z6/.config/qutebrowser/home/index.html
-    - last_visited: '2025-08-15T18:25:02'
-      pinned: false
-      title: 'Cisco Networking Academy: My Learning Dashboard'
-      url: https://www.netacad.com/dashboard
-    - last_visited: '2025-08-15T18:25:15'
-      pinned: false
-      title: 'Cisco Networking Academy: My Learning Dashboard'
-      url: https://www.netacad.com/dashboard
-    - last_visited: '2025-08-15T18:25:39'
-      original-url: https://auth.netacad.com/auth/realms/skillsforall/protocol/openid-connect/auth?client_id=b2e-marketplace&redirect_uri=https%3A%2F%2Fwww.netacad.com%2Fdashboard&state=efa7331b-89d5-4200-b0f2-8b8033444908&response_mode=fragment&response_type=code&scope=openid&nonce=a8b7e963-159a-48c8-a0ed-db7d83673466&ui_locales=en-US&code_challenge=3xBtkE2cmfRPYjxpaC9Rwu36qYf_OlleUXazx2nn7PI&code_challenge_method=S256
-      pinned: false
-      title: Login | Networking Academy with Cisco
-      url: https://auth.netacad.com/auth/realms/skillsforall/login-actions/authenticate?client_id=b2e-marketplace&tab_id=bFpAPc50tY0&client_data=eyJydSI6Imh0dHBzOi8vd3d3Lm5ldGFjYWQuY29tL2Rhc2hib2FyZCIsInJ0IjoiY29kZSIsInJtIjoiZnJhZ21lbnQiLCJzdCI6ImVmYTczMzFiLTg5ZDUtNDIwMC1iMGYyLThiODAzMzQ0NDkwOCJ9&execution=544c98b5-6b03-41d5-b104-b625ecff8ce5&kc_locale=en
     - active: true
-      last_visited: '2025-08-15T18:26:57'
+      last_visited: '2025-08-15T23:24:00'
       pinned: false
       scroll-pos:
         x: 0
@@ -43,17 +26,17 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:44'
+      last_visited: '2025-08-15T23:24:00'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Great Learning
+      title: Olympus LMS
       url: https://olympus.mygreatlearning.com/courses/12629/modules/items/926439?pb_id=581
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:24'
+      last_visited: '2025-08-15T23:24:01'
       pinned: false
       scroll-pos:
         x: 0
@@ -63,7 +46,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:23'
+      last_visited: '2025-08-15T23:24:00'
       pinned: false
       scroll-pos:
         x: 0
@@ -73,7 +56,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:24'
+      last_visited: '2025-08-15T23:24:00'
       pinned: false
       scroll-pos:
         x: 0
@@ -83,7 +66,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:35'
+      last_visited: '2025-08-15T23:24:00'
       pinned: false
       scroll-pos:
         x: 0
@@ -93,7 +76,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:38'
+      last_visited: '2025-08-15T23:23:59'
       pinned: false
       scroll-pos:
         x: 0
@@ -103,7 +86,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:36'
+      last_visited: '2025-08-15T23:23:59'
       pinned: false
       scroll-pos:
         x: 0
@@ -113,7 +96,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:36'
+      last_visited: '2025-08-15T23:23:59'
       pinned: false
       scroll-pos:
         x: 0
@@ -123,7 +106,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:35'
+      last_visited: '2025-08-15T23:24:00'
       pinned: false
       scroll-pos:
         x: 0
@@ -133,7 +116,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:35'
+      last_visited: '2025-08-15T23:24:01'
       pinned: false
       scroll-pos:
         x: 0
@@ -143,7 +126,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T18:24:35'
+      last_visited: '2025-08-15T23:24:01'
       pinned: false
       scroll-pos:
         x: 0
@@ -153,20 +136,12 @@ windows:
       zoom: 1.0
   - active: true
     history:
-    - last_visited: '2025-08-15T18:28:07'
-      pinned: false
-      title: Homepage
-      url: file:///home/z6/.config/qutebrowser/home/index.html
-    - last_visited: '2025-08-15T18:28:14'
-      pinned: false
-      title: DeepSeek - Into the Unknown
-      url: https://chat.deepseek.com/
     - active: true
-      last_visited: '2025-08-15T18:28:21'
+      last_visited: '2025-08-15T23:24:00'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Green-Black Theme with Element Fixes - DeepSeek
+      title: DeepSeek
       url: https://chat.deepseek.com/a/chat/s/98ec50cc-4e1a-4697-8ea8-31af8c8ce0e3
       zoom: 1.0

@@ -110,40 +110,48 @@ config.bind(',wd1', 'spawn --userscript switch-workspace hacking')
 config.bind(',wd2', 'spawn --userscript switch-workspace study')
 config.bind(',wd3', 'spawn --userscript switch-workspace z6')
 
-# ===== MAIN AD-BLOCKING SETUP =====
-config.content.blocking.method = 'auto'  # Best balance (hosts + adblock)
-config.content.blocking.enabled = True
+# ===== COMPLETE AD-BLOCKING CONFIGURATION =====
+# Enable ad-blocking system
+c.content.blocking.enabled = True
 
-# === ADBLOCK LISTS (EasyList-style rules) ===
-config.content.blocking.adblock.lists = [
-    # Base filters (essential)
-    'https://easylist.to/easylist/easylist.txt',
-    'https://easylist.to/easylist/easyprivacy.txt',
+# Blocking method (options: 'auto', 'adblock', 'hosts', 'both')
+c.content.blocking.method = 'auto'  # 'auto' = smart combination of methods
+
+# ===== ADBLOCK LISTS (EasyList format) =====
+c.content.blocking.adblock.lists = [
+    # Essential filters
+    'https://easylist.to/easylist/easylist.txt',  # General advertisements
+    'https://easylist.to/easylist/easyprivacy.txt',  # Tracking protection
+    'https://easylist-downloads.adblockplus.org/easylist.txt',  # Mirror
     
-    # Anti-annoyance (cookie popups, etc.)
-    'https://secure.fanboy.co.nz/fanboy-annoyance.txt',
+    # Anti-annoyance
+    'https://secure.fanboy.co.nz/fanboy-annoyance.txt',  # Cookie notices, popups
+    'https://easylist.to/easylist/fanboy-social.txt',  # Social media widgets
     
-    # Extra ad/tracker blocking
-    'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=0',
-    
-    # Social media trackers (optional)
-    'https://secure.fanboy.co.nz/fanboy-antifacebook.txt',
+    # Regional filters (uncomment if needed)
+    # 'https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt',  # Anti-CoinHive
+    # 'https://stanev.org/abp/adblock_bg.txt',  # Bulgarian ads
 ]
 
-# === HOSTS-BASED BLOCKING (faster, but less flexible) ===
-config.content.blocking.hosts.lists = [
-    # Blocks ads + malware
-    'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',
-    
-    # Optional: Aggressive blocking (may break some sites)
-    # 'https://someonewhocares.org/hosts/zero/hosts',
+# ===== HOSTS-BASED BLOCKING =====
+c.content.blocking.hosts.lists = [
+    'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',  # Standard
+    # 'https://someonewhocares.org/hosts/zero/hosts',  # More aggressive
+    # 'https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt',  # Mobile-focused
 ]
 
-# === PERFORMANCE SETTINGS ===
-config.content.blocking.update_interval = 86400  # Update lists every 24h
-config.content.blocking.whitelist = []  # No exceptions
+# ===== ADVANCED SETTINGS =====
+# Whitelist certain sites (if needed)
+c.content.blocking.whitelist = [
+    # '*.example.com',  # Uncomment and add sites that break
+]
 
-# === OPTIONAL TWEAKS ===
-# Uncomment if you want stricter blocking (may break some sites):
-#config.content.blocking.method = 'both'  
-#config.content.canvas_reading = False  
+# Block WebRTC IP leakage (privacy)
+c.content.webrtc_ip_handling_policy = 'disable-non-proxied-udp'
+
+# Block JavaScript popups
+c.content.javascript.modal_dialog = False
+
+# ===== KEYBINDS FOR ADBLOCK CONTROL =====
+config.bind(',au', 'adblock-update', mode='normal')  # Update blocklists
+config.bind(',at', 'adblock-toggle', mode='normal')  # Toggle ad-blocking
