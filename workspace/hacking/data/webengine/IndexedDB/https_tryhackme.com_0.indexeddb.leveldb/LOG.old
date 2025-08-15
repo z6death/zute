@@ -1,24 +1,15 @@
-2025/08/15-15:24:21.648 3799 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_tryhackme.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/08/15-15:24:21.649 3799 Recovering log #6
-2025/08/15-15:24:21.652 3799 Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_tryhackme.com_0.indexeddb.leveldb/000006.log 
-2025/08/15-15:24:46.015 3797 Level-0 table #10: started
-2025/08/15-15:24:46.029 3797 Level-0 table #10: 508 bytes OK
-2025/08/15-15:24:46.051 3797 Delete type=0 #6
-2025/08/15-15:24:46.062 3797 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 838 : 1
-2025/08/15-15:24:46.062 3797 Compacting 1@0 + 1@1 files
-2025/08/15-15:24:46.090 3797 Generated table #11@0: 64 keys, 1047 bytes
-2025/08/15-15:24:46.090 3797 Compacted 1@0 + 1@1 files => 1047 bytes
-2025/08/15-15:24:46.112 3797 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/08/15-15:24:46.113 3797 Delete type=2 #10
-2025/08/15-15:24:46.113 379d Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 838 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/08/15-15:24:47.256 379e Level-0 table #13: started
-2025/08/15-15:24:47.264 379e Level-0 table #13: 508 bytes OK
-2025/08/15-15:24:47.281 379e Delete type=2 #7
-2025/08/15-15:24:47.281 379e Delete type=0 #9
-2025/08/15-15:24:47.286 379e Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at '\x00\x07\x00\x00\x05' @ 854 : 1
-2025/08/15-15:24:47.286 379e Compacting 1@0 + 1@1 files
-2025/08/15-15:24:47.305 379e Generated table #14@0: 68 keys, 1093 bytes
-2025/08/15-15:24:47.305 379e Compacted 1@0 + 1@1 files => 1093 bytes
-2025/08/15-15:24:47.317 379e compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/08/15-15:24:47.318 379e Delete type=2 #13
-2025/08/15-15:24:47.328 379d Manual compaction at level-0 from '\x00\x07\x00\x00\x05' @ 854 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/08/15-15:32:05.974 3c70 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_tryhackme.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/08/15-15:32:05.975 3c70 Recovering log #12
+2025/08/15-15:32:05.975 3c70 Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_tryhackme.com_0.indexeddb.leveldb/000012.log 
+2025/08/15-15:32:05.975 3c70 Delete type=2 #11
+2025/08/15-15:32:13.301 3c6f Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/08/15-15:32:13.530 3c6f Level-0 table #17: started
+2025/08/15-15:32:13.542 3c6f Level-0 table #17: 699 bytes OK
+2025/08/15-15:32:13.563 3c6f Delete type=0 #12
+2025/08/15-15:32:13.567 3c6f Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x09\x00\x00\x05' @ 890 : 1
+2025/08/15-15:32:13.567 3c6f Compacting 1@0 + 1@1 files
+2025/08/15-15:32:13.582 3c6f Generated table #18@0: 68 keys, 1093 bytes
+2025/08/15-15:32:13.582 3c6f Compacted 1@0 + 1@1 files => 1093 bytes
+2025/08/15-15:32:13.595 3c6f compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/08/15-15:32:13.596 3c6f Delete type=2 #17
+2025/08/15-15:32:13.608 3c6f Manual compaction at level-0 from '\x00\x09\x00\x00\x05' @ 890 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)

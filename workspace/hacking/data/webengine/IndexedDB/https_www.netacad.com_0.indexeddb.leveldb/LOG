@@ -1,3 +1,15 @@
-2025/08/15-15:39:11.680 3ce0 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_www.netacad.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/08/15-15:39:11.681 3ce0 Recovering log #4
-2025/08/15-15:39:11.681 3ce0 Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_www.netacad.com_0.indexeddb.leveldb/000004.log 
+2025/08/15-16:41:08.778 5991 Reusing MANIFEST /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_www.netacad.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/08/15-16:41:08.779 5991 Recovering log #4
+2025/08/15-16:41:08.780 5991 Reusing old log /home/z6/.config/qutebrowser/workspace/hacking/data/webengine/IndexedDB/https_www.netacad.com_0.indexeddb.leveldb/000004.log 
+2025/08/15-17:31:34.071 5d79 Level-0 table #8: started
+2025/08/15-17:31:34.075 5d79 Level-0 table #8: 17727 bytes OK
+2025/08/15-17:31:34.080 5d79 Delete type=0 #4
+2025/08/15-17:31:34.080 5d79 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2025/08/15-17:31:34.081 5d79 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01\x03\x01\x14\x00a\x00p\x00o\x00l\x00l\x00o\x00-\x00c\x00a\x00c\x00h\x00e\x00-\x00p\x00e\x00r\x00s\x00i\x00s\x00t' @ 307 : 1
+2025/08/15-17:31:34.081 5d79 Compacting 1@1 + 1@2 files
+2025/08/15-17:31:34.085 5d79 Generated table #9@1: 33 keys, 912 bytes
+2025/08/15-17:31:34.085 5d79 Compacted 1@1 + 1@2 files => 912 bytes
+2025/08/15-17:31:34.089 5d79 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/08/15-17:31:34.089 5d79 Delete type=2 #5
+2025/08/15-17:31:34.089 5d79 Delete type=2 #8
+2025/08/15-17:31:34.090 5d79 Manual compaction at level-1 from '\x00\x02\x01\x03\x01\x14\x00a\x00p\x00o\x00l\x00l\x00o\x00-\x00c\x00a\x00c\x00h\x00e\x00-\x00p\x00e\x00r\x00s\x00i\x00s\x00t' @ 307 : 1 .. (end); will stop at (end)

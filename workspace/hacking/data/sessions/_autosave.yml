@@ -1,0 +1,75 @@
+windows:
+- active: true
+  geometry: !!binary |
+    AdnQywADAAAAAAPFAAAAHgAAB3UAAAQZAAADzgAAACcAAAdsAAAEEAAAAAAAAAAAB4AAAAPOAAAA
+    JwAAB2wAAAQQ
+  tabs:
+  - history:
+    - last_visited: '2025-08-15T16:40:27'
+      pinned: false
+      title: TryHackMe | Dashboard
+      url: https://tryhackme.com/dashboard
+    - active: true
+      last_visited: '2025-08-15T17:34:38'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: TryHackMe | Offensive Security Intro
+      url: https://tryhackme.com/room/offensivesecurityintro
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2025-08-15T16:40:22'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: You searched for Introduction to Ethical Hacking - GeeksforGeeks
+      url: https://www.geeksforgeeks.org/search/?gq=Introduction+to+Ethical+Hacking
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2025-08-15T16:40:24'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Ethical Hacking Tutorial - GeeksforGeeks
+      url: https://www.geeksforgeeks.org/ethical-hacking/ethical-hacking-tutorial/
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2025-08-15T16:40:24'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: How to Become an Ethical Hacker in 2025? - GeeksforGeeks
+      url: https://www.geeksforgeeks.org/blogs/how-to-become-ethical-hacker/
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2025-08-15T17:49:19'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Ethical Hacking | Footprinting - GeeksforGeeks
+      url: https://www.geeksforgeeks.org/ethical-hacking/ethical-hacking-footprinting/
+      zoom: 1.0
+  - active: true
+    history:
+    - last_visited: '2025-08-15T17:55:35'
+      pinned: false
+      title: DeepSeek - Into the Unknown
+      url: https://chat.deepseek.com/
+    - active: true
+      last_visited: '2025-08-15T17:56:07'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Green-Black Theme with Element Fixes - DeepSeek
+      url: https://chat.deepseek.com/a/chat/s/98ec50cc-4e1a-4697-8ea8-31af8c8ce0e3
+      zoom: 1.0
