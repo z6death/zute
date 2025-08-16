@@ -83,10 +83,10 @@ c.url.default_page = '~/.config/qutebrowser/home/index.html'
 c.colors.webpage.darkmode.enabled = False
 c.colors.webpage.darkmode.policy.images = 'never'
 c.colors.webpage.darkmode.policy.page = 'always'
+
 # In config.py
 config.bind(',ws', 'session-save work')
-config.bind(',wl', 'session-load work')
-
+config.bind(',wl', 'session-load work ;; close')
 # Create a tab stack
 config.bind(',tg', 'tab-give')
 
@@ -100,11 +100,6 @@ config.bind(',tm', 'tab-move')
 # In config.py
 c.auto_save.session = True  # Auto-save session on exit
 c.session.default_name = 'default'  # Default session name
-
-# Keybinds for session control
-config.bind(',ss', 'session-save')
-config.bind(',sl', 'session-load')
-config.bind(',sd', 'session-delete')
 
 config.bind(',wd1', 'spawn --userscript switch-workspace hacking')
 config.bind(',wd2', 'spawn --userscript switch-workspace study')
