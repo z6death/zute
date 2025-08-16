@@ -110,7 +110,7 @@ config.bind(',wd3', 'spawn --userscript switch-workspace z6')
 c.content.blocking.enabled = True
 
 # Blocking method (options: 'auto', 'adblock', 'hosts', 'both')
-c.content.blocking.method = 'auto'  # 'auto' = smart combination of methods
+c.content.blocking.method = 'both'  # 'auto' = smart combination of methods
 
 # ===== ADBLOCK LISTS (EasyList format) =====
 c.content.blocking.adblock.lists = [
@@ -131,7 +131,7 @@ c.content.blocking.adblock.lists = [
 # ===== HOSTS-BASED BLOCKING =====
 c.content.blocking.hosts.lists = [
     'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',  # Standard
-    # 'https://someonewhocares.org/hosts/zero/hosts',  # More aggressive
+    'https://someonewhocares.org/hosts/zero/hosts',  # More aggressive
     # 'https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt',  # Mobile-focused
 ]
 
