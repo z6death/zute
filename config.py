@@ -105,6 +105,11 @@ config.bind(',wd1', 'spawn --userscript switch-workspace hacking')
 config.bind(',wd2', 'spawn --userscript switch-workspace study')
 config.bind(',wd3', 'spawn --userscript switch-workspace z6')
 
+# Opens new workspace while keeping current window open (capital W)
+config.bind(',W1', 'spawn --userscript open-workspace hacking')
+config.bind(',W2', 'spawn --userscript open-workspace study')
+config.bind(',W3', 'spawn --userscript open-workspace z6')
+
 # ===== COMPLETE AD-BLOCKING CONFIGURATION =====
 # Enable ad-blocking system
 c.content.blocking.enabled = True

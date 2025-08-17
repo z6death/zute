@@ -9,4 +9,5 @@ settings:
   content.blocking.method:
     global: both
   content.user_stylesheets:
-    global: []
+    global:
+    - ~/.config/qutebrowser/green-black.css
