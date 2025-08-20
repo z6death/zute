@@ -1,12 +1,12 @@
 windows:
 - active: true
   geometry: !!binary |
-    AdnQywADAAAAAAAKAAAAHgAAB3UAAAQZAAAAEwAAACcAAAdsAAAEEAAAAAAAAAAAB4AAAAATAAAA
+    AdnQywADAAAAAAPFAAAAHgAAB3UAAAQZAAADzgAAACcAAAdsAAAEEAAAAAAAAAAAB4AAAAPOAAAA
     JwAAB2wAAAQQ
   tabs:
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:00'
+      last_visited: '2025-08-20T10:43:45'
       pinned: false
       scroll-pos:
         x: 0
@@ -16,27 +16,27 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:00'
+      last_visited: '2025-08-20T10:43:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: 'Cisco Networking Academy: My Learning Dashboard'
-      url: https://www.netacad.com/dashboard
+      title: 'Cisco Networking Academy: Learn Cybersecurity, Python & More'
+      url: https://www.netacad.com/
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:00'
+      last_visited: '2025-08-20T10:43:49'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Olympus LMS
+      title: Great Learning
       url: https://olympus.mygreatlearning.com/courses/12629/modules/items/926439?pb_id=581
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:01'
+      last_visited: '2025-08-20T10:43:15'
       pinned: false
       scroll-pos:
         x: 0
@@ -46,7 +46,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:00'
+      last_visited: '2025-08-20T10:43:14'
       pinned: false
       scroll-pos:
         x: 0
@@ -56,7 +56,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:00'
+      last_visited: '2025-08-20T10:43:14'
       pinned: false
       scroll-pos:
         x: 0
@@ -66,7 +66,17 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:00'
+      last_visited: '2025-08-20T10:43:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Search - freeCodeCamp.org
+      url: https://www.freecodecamp.org/news/search/?query=ethical%20hacking
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2025-08-20T10:43:31'
       pinned: false
       scroll-pos:
         x: 0
@@ -76,7 +86,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:23:59'
+      last_visited: '2025-08-20T10:43:43'
       pinned: false
       scroll-pos:
         x: 0
@@ -86,7 +96,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:23:59'
+      last_visited: '2025-08-20T10:43:44'
       pinned: false
       scroll-pos:
         x: 0
@@ -96,7 +106,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:23:59'
+      last_visited: '2025-08-20T10:43:43'
       pinned: false
       scroll-pos:
         x: 0
@@ -106,7 +116,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:00'
+      last_visited: '2025-08-20T10:43:50'
       pinned: false
       scroll-pos:
         x: 0
@@ -116,7 +126,7 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:01'
+      last_visited: '2025-08-20T10:43:56'
       pinned: false
       scroll-pos:
         x: 0
@@ -126,22 +136,54 @@ windows:
       zoom: 1.0
   - history:
     - active: true
-      last_visited: '2025-08-15T23:24:01'
+      last_visited: '2025-08-20T10:43:13'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: Course | edX
-      url: https://learning.edx.org/course/course-v1:EC-Council+EHE-112-52+3T2022/block-v1:EC-Council+EHE-112-52+3T2022+type@sequential+block@02f96ba855fc4d7188a28334e86a7802/block-v1:EC-Council+EHE-112-52+3T2022+type@vertical+block@d3675c4fba7a4f9a8f52c1ea6efd5560
+      title: C++ Developer Roadmap
+      url: https://roadmap.sh/cpp
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2025-08-20T10:43:14'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'Cyber Security Roadmap: Learn to become a Cyber Security Expert'
+      url: https://roadmap.sh/cyber-security?fl=0#
+      zoom: 1.0
+  - history:
+    - last_visited: '2025-08-20T10:43:15'
+      pinned: false
+      title: Homepage
+      url: file:///home/z6/.config/qutebrowser/home/index.html
+    - last_visited: '2025-08-20T10:43:55'
+      pinned: false
+      title: pico ctf at DuckDuckGo
+      url: https://duckduckgo.com/?q=pico+ctf&ia=web
+    - active: true
+      last_visited: '2025-08-20T10:44:05'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: picoCTF - CMU Cybersecurity Competition
+      url: https://www.picoctf.org/
       zoom: 1.0
   - active: true
     history:
+    - last_visited: '2025-08-20T10:46:48'
+      pinned: false
+      title: over the wire at DuckDuckGo
+      url: https://duckduckgo.com/?q=over+the+wire&ia=web
     - active: true
-      last_visited: '2025-08-15T23:24:00'
+      last_visited: '2025-08-20T10:46:51'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: DeepSeek
-      url: https://chat.deepseek.com/a/chat/s/98ec50cc-4e1a-4697-8ea8-31af8c8ce0e3
+      title: 'OverTheWire: Wargames'
+      url: https://overthewire.org/wargames/
       zoom: 1.0

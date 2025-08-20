@@ -36,3 +36,8 @@
 :open https://www.netacad.com/dashboard#state=7a82fcf6-547e-4bdc-8d81-9a1428ac2c72&session_state=cc2efb57-3d64-4c3f-85d7-c7abd22cc6fb&iss=https%3A%2F%2Fauth.netacad.com%2Fauth%2Frealms%2Fskillsforall&code=fb981a8e-977c-4956-b620-6de106ecf3c3.cc2efb57-3d64-4c3f-85d7-c7abd22cc6fb.8870065c-459e-43f2-83c2-9569348f2c95
 :open https://chat.deepseek.com/
 :config-source
+:open ~/.hacking/cyber-security.pdf
+:help 
+:open https://roadmap.sh/cyber-security?fl=0#
+:open pico ctf
+:open over the wire
