@@ -16,7 +16,8 @@ c.content.user_stylesheets = ['~/.config/qutebrowser/green-black.css']
 
 # Simple toggle without message
 config.bind(',st', 'config-cycle content.user_stylesheets [] ["~/.config/qutebrowser/green-black.css"]', mode='normal')
-
+# Dark Reader style toggle (like Dark Reader extension)
+config.bind(',dr', 'config-cycle content.user_stylesheets ["~/.config/qutebrowser/green-black.css"] ["~/.config/qutebrowser/dark-reader.css"]', mode='normal')
 # Text colors (All green #00FF4C)
 c.colors.completion.fg = '#00FF4C'
 c.colors.completion.category.fg = '#00FF4C'
@@ -132,9 +133,9 @@ config.bind(',tm', 'tab-move')
 
 # ===== WORKSPACE MANAGEMENT =====
 # Note: These require the corresponding userscripts to exist
-config.bind(',wd1', 'spawn --userscript switch-workspace hacking')
-config.bind(',wd2', 'spawn --userscript switch-workspace study')
-config.bind(',wd3', 'spawn --userscript switch-workspace z6')
+config.bind(',wr1', 'spawn --userscript switch-workspace hacking')
+config.bind(',wr2', 'spawn --userscript switch-workspace study')
+config.bind(',wr3', 'spawn --userscript switch-workspace z6')
 
 # Opens new workspace while keeping current window open (capital W)
 config.bind(',W1', 'spawn --userscript open-workspace hacking')
@@ -210,8 +211,7 @@ c.content.media.video_capture = False
 c.session.default_name = 'default'
 
 # Downloads
-c.downloads.location.directory = '~/Downloads'
-c.downloads.location.prompt = False
+c.downloads.location.prompt = True
 c.downloads.remove_finished = 3000
 
 # Enable smooth scrolling

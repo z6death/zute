@@ -1,0 +1,8 @@
+/* Dark Reader style dark mode */
+html {
+    filter: invert(1) hue-rotate(180deg) !important;
+    background: #000 !important;
+}
+img, video, canvas, svg, [style*="background-image"] {
+    filter: invert(1) hue-rotate(180deg) !important;
+}

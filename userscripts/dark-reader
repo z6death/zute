@@ -1,0 +1,20 @@
+#!/bin/bash
+# Dark Reader Style Toggle Script for qutebrowser
+# Creates CSS file and toggles stylesheet
+
+CSS_FILE="$HOME/.config/qutebrowser/dark-reader.css"
+
+if [ ! -f "$CSS_FILE" ]; then
+    cat > "$CSS_FILE" << 'EOF'
+/* Dark Reader style dark mode */
+html {
+    filter: invert(1) hue-rotate(180deg) !important;
+    background: #000 !important;
+}
+img, video, canvas, svg, [style*="background-image"] {
+    filter: invert(1) hue-rotate(180deg) !important;
+}
+EOF
+fi
+
+qutebrowser "config-cycle content.user_stylesheets ~/.config/qutebrowser/green-black.css ~/.config/qutebrowser/dark-reader.css"
