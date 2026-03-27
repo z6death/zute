@@ -1,4 +1,20 @@
 #!/bin/sh
-# For Void Linux with runit - closes original window after launching new workspace
-setsid -f qutebrowser --basedir "$HOME/.config/qutebrowser/workspace/$1"
+# Switch to workspace (profile only, no session loading by default)
+# Usage: switch-workspace <workspace_name>
+
+WORKSPACE="$1"
+WORKSPACE_DIR="$HOME/.config/qutebrowser/workspace/$WORKSPACE"
+
+if [ -z "$WORKSPACE" ]; then
+    echo "message-error 'No workspace name provided'" >& "$QUTE_FIFO"
+    exit 1
+fi
+
+if [ ! -d "$WORKSPACE_DIR" ]; then
+    echo "message-error 'Workspace does not exist: $WORKSPACE'" >& "$QUTE_FIFO"
+    exit 1
+fi
+
+setsid -f qutebrowser --basedir "$WORKSPACE_DIR"
+
 echo "close" > "$QUTE_FIFO"

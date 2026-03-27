@@ -1,0 +1,34 @@
+/* Minimal Black/White Theme */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+html, body {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, div, span {
+  color: var(--white) !important;
+  background-color: transparent !important;
+}
+
+a {
+  color: var(--white) !important;
+  text-decoration: underline !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+/* Protect media and complex sites */
+img, video, iframe, canvas, svg,
+[class*="yt"], [id*="youtube"],
+[class*="video"], [class*="player"] {
+  background-color: unset !important;
+  color: unset !important;
+  filter: none !important;
+}

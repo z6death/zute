@@ -1,0 +1,205 @@
+#!/bin/bash
+# Enhanced session manager for qutebrowser with workspace support
+# Usage: spawn --userscript session-manager [save|load|delete|list|menu] [args...]
+
+ACTION="${1:-menu}"
+WORKSPACE_NAME=""
+SESSION_NAME=""
+
+get_current_workspace() {
+    local basedir="${QUTE_BASEDIR:-$HOME/.config/qutebrowser}"
+    if [[ "$basedir" == *"workspace"* ]]; then
+        basename "$basedir"
+    else
+        echo "global"
+    fi
+}
+
+SESSIONS_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/qutebrowser/sessions"
+WORKSPACE_DIR="$HOME/.config/qutebrowser/workspace"
+
+workspace_sessions() {
+    local ws="$1"
+    find "$WORKSPACE_DIR/$ws" -maxdepth 1 -name "*.yml" -type f 2>/dev/null | xargs -I {} basename {} .yml
+}
+
+global_sessions() {
+    find "$SESSIONS_DIR" -maxdepth 1 -name "*.yml" -type f 2>/dev/null | xargs -I {} basename {} .yml | grep -v '^_'
+}
+
+save_workspace_session() {
+    local ws="$1"
+    local name="$2"
+    if [ -z "$ws" ] || [ -z "$name" ]; then
+        echo "message-error 'Usage: session-manager save-workspace <workspace> <name>'" >& "$QUTE_FIFO"
+        exit 1
+    fi
+    local ws_dir="$WORKSPACE_DIR/$ws"
+    if [ ! -d "$ws_dir" ]; then
+        echo "message-error 'Workspace does not exist: $ws'" >& "$QUTE_FIFO"
+        exit 1
+    fi
+    qutebrowser --basedir "$ws_dir" --command "session-save '$name'" 2>/dev/null
+    echo "message-info 'Saved workspace session: $ws/$name'" >& "$QUTE_FIFO"
+}
+
+save_current_workspace_session() {
+    local current_ws=$(get_current_workspace)
+    if [ "$current_ws" = "global" ]; then
+        echo "message-error 'Not in a workspace. Use save-global instead.'" >& "$QUTE_FIFO"
+        exit 1
+    fi
+    local name="$1"
+    if [ -z "$name" ]; then
+        echo "message-error 'No session name provided'" >& "$QUTE_FIFO"
+        exit 1
+    fi
+    save_workspace_session "$current_ws" "$name"
+}
+
+save_global_session() {
+    local name="$1"
+    if [ -z "$name" ]; then
+        echo "message-error 'No session name provided'" >& "$QUTE_FIFO"
+        exit 1
+    fi
+    echo "session-save '$name'" >& "$QUTE_FIFO"
+    echo "message-info 'Saved global session: $name'" >& "$QUTE_FIFO"
+}
+
+load_session() {
+    local name="$1"
+    local is_global="$2"
+    if [ -z "$name" ]; then
+        echo "message-error 'No session name provided'" >& "$QUTE_FIFO"
+        exit 1
+    fi
+    if [ "$is_global" = "global" ]; then
+        echo "session-load '$name'" >& "$QUTE_FIFO"
+    else
+        echo "message-info 'Workspace sessions auto-load when switching workspaces'" >& "$QUTE_FIFO"
+    fi
+}
+
+load_workspace_session() {
+    local ws="$1"
+    local name="$2"
+    if [ -z "$ws" ] || [ -z "$name" ]; then
+        echo "message-error 'Usage: load-workspace <workspace> <name>'" >& "$QUTE_FIFO"
+        exit 1
+    fi
+    qutebrowser --basedir "$WORKSPACE_DIR/$ws" &
+    echo "message-info 'Opening workspace $ws with session $name'" >& "$QUTE_FIFO"
+}
+
+delete_workspace_session() {
+    local ws="$1"
+    local name="$2"
+    if [ -z "$ws" ] || [ -z "$name" ]; then
+        echo "message-error 'Usage: delete-workspace <workspace> <name>'" >& "$QUTE_FIFO"
+        exit 1
+    fi
+    local target="$WORKSPACE_DIR/$ws/$name.yml"
+    if [ -f "$target" ]; then
+        rm "$target"
+        echo "message-info 'Deleted workspace session: $ws/$name'" >& "$QUTE_FIFO"
+    else
+        echo "message-error 'Session not found: $ws/$name'" >& "$QUTE_FIFO"
+    fi
+}
+
+delete_global_session() {
+    local name="$1"
+    if [ -z "$name" ]; then
+        echo "message-error 'No session name provided'" >& "$QUTE_FIFO"
+        exit 1
+    fi
+    local target="$SESSIONS_DIR/${name}.yml"
+    if [ -f "$target" ]; then
+        rm "$target"
+        echo "message-info 'Deleted global session: $name'" >& "$QUTE_FIFO"
+    else
+        echo "message-error 'Session not found: $name'" >& "$QUTE_FIFO"
+    fi
+}
+
+list_sessions() {
+    echo "message-info '=== Global Sessions ==='" >& "$QUTE_FIFO"
+    global_sessions | while read s; do echo "message-info '  $s (global)'" >& "$QUTE_FIFO"; done
+    
+    echo "message-info '=== Workspace Sessions ==='" >& "$QUTE_FIFO"
+    for ws in "$WORKSPACE_DIR"/*; do
+        if [ -d "$ws" ]; then
+            ws_name=$(basename "$ws")
+            workspace_sessions "$ws_name" | while read s; do
+                echo "message-info '  $ws_name: $s'" >& "$QUTE_FIFO"
+            done
+        fi
+    done
+}
+
+menu() {
+    local options=""
+    
+    options="${options}Save current as (global):save-global\n"
+    options="${options}Save current as (workspace):save-workspace\n"
+    options="${options}Load a session:load\n"
+    options="${options}List all sessions:list\n"
+    options="${options}Delete a session:delete"
+    
+    local g_sessions=$(global_sessions)
+    if [ -n "$g_sessions" ]; then
+        while IFS= read -r sess; do
+            options="${options}\nLoad (global): $sess:load:global:$sess"
+            options="${options}\nDelete (global): $sess:delete:global:$sess"
+        done <<< "$g_sessions"
+    fi
+    
+    for ws in "$WORKSPACE_DIR"/*; do
+        if [ -d "$ws" ]; then
+            ws_name=$(basename "$ws")
+            local w_sessions=$(workspace_sessions "$ws_name")
+            if [ -n "$w_sessions" ]; then
+                while IFS= read -r sess; do
+                    options="${options}\nLoad workspace: $ws_name/$sess:load-workspace:$ws_name:$sess"
+                    options="${options}\nDelete workspace: $ws_name/$sess:delete-workspace:$ws_name:$sess"
+                done <<< "$w_sessions"
+            fi
+        fi
+    done
+    
+    echo "set-cmd-text -s :dialog inputs 'Session Manager' '$options'"
+}
+
+case "$ACTION" in
+    save-global)
+        save_global_session "$2"
+        ;;
+    save-workspace)
+        save_workspace_session "$2" "$3"
+        ;;
+    save-cw)
+        save_current_workspace_session "$2"
+        ;;
+    load)
+        load_session "$2" "$3"
+        ;;
+    load-workspace)
+        load_workspace_session "$2" "$3"
+        ;;
+    delete)
+        delete_global_session "$2"
+        ;;
+    delete-workspace)
+        delete_workspace_session "$2" "$3"
+        ;;
+    delete-global)
+        delete_global_session "$2"
+        ;;
+    list)
+        list_sessions
+        ;;
+    menu|*)
+        menu
+        ;;
+esac

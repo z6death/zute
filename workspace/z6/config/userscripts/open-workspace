@@ -1,3 +1,29 @@
 #!/bin/sh
-# Opens a new workspace WITHOUT closing the original window
-setsid -f qutebrowser --basedir "$HOME/.config/qutebrowser/workspace/$1"
+# Open workspace - loads saved session if exists, or opens fresh (doesn't close original)
+# Usage: open-workspace <workspace_name> [session_name]
+
+WORKSPACE="$1"
+SESSION="$2"
+WORKSPACE_DIR="$HOME/.config/qutebrowser/workspace/$WORKSPACE"
+
+if [ -z "$WORKSPACE" ]; then
+    echo "message-error 'No workspace name provided'" >& "$QUTE_FIFO"
+    exit 1
+fi
+
+if [ ! -d "$WORKSPACE_DIR" ]; then
+    echo "message-error 'Workspace does not exist: $WORKSPACE'" >& "$QUTE_FIFO"
+    exit 1
+fi
+
+if [ -n "$SESSION" ]; then
+    setsid -f qutebrowser --basedir "$WORKSPACE_DIR" -c "session-load '$SESSION'" 2>/dev/null
+else
+    latest=$(ls -t "$WORKSPACE_DIR"/*.yml 2>/dev/null | head -1)
+    if [ -n "$latest" ]; then
+        session_name=$(basename "$latest" .yml)
+        setsid -f qutebrowser --basedir "$WORKSPACE_DIR" -c "session-load '$session_name'" 2>/dev/null
+    else
+        setsid -f qutebrowser --basedir "$WORKSPACE_DIR"
+    fi
+fi

@@ -1,15 +1,18 @@
 #!/bin/sh
-# Open workspace - loads saved session if exists, or opens fresh (doesn't close original)
-# Usage: open-workspace <workspace_name> [session_name]
+# Load workspace session by number
+# Usage: load-workspace-session <num> [session_name]
+# num: 1=hacking, 2=study, 3=z6
+# If no session_name, loads latest session
 
-WORKSPACE="$1"
-SESSION="$2"
+case "$1" in
+    1) WORKSPACE="hacking" ;;
+    2) WORKSPACE="study" ;;
+    3) WORKSPACE="z6" ;;
+    *) echo "message-error 'Invalid workspace number: $1'" >& "$QUTE_FIFO"; exit 1 ;;
+esac
+
 WORKSPACE_DIR="$HOME/.config/qutebrowser/workspace/$WORKSPACE"
-
-if [ -z "$WORKSPACE" ]; then
-    echo "message-error 'No workspace name provided'" >& "$QUTE_FIFO"
-    exit 1
-fi
+SESSION="$2"
 
 if [ ! -d "$WORKSPACE_DIR" ]; then
     echo "message-error 'Workspace does not exist: $WORKSPACE'" >& "$QUTE_FIFO"
@@ -27,3 +30,5 @@ else
         setsid -f qutebrowser --basedir "$WORKSPACE_DIR"
     fi
 fi
+
+echo "close" > "$QUTE_FIFO"
